@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+.container {
+  max-width: 1920px;
+  margin: auto 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  padding: 20px 20px;
+}
+.header .header__logo {
+  width: 194px;
+}
+.header .header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__menu li {
+  list-style: none;
+  margin: 15px;
+}
+.header .header__menu li a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/bg-header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: cover; */
+  background-size: 100% 100%;
+  min-height: 1190px;
+  min-width: 1920px;
+}
+.banner .banner__left {
+  width: 50%;
+  margin-top: 300px;
+  margin-left: 50px;
+}
+.banner .banner__left .banner__left__name {
+  font-size: 46px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.banner .banner__left .banner__left__descrition {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.banner .banner__left .banner__left__btn-banner {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 13px 45px;
+  border-radius: 0 50px 0 50px;
+  -webkit-border-radius: 0 50px 0 50px;
+  -moz-border-radius: 0 50px 0 50px;
+  -ms-border-radius: 0 50px 0 50px;
+  -o-border-radius: 0 50px 0 50px;
+}
+.banner .banner__right {
+  width: 50%;
+  position: relative;
+}
+.banner .banner__right img {
+  position: absolute;
+  right: 0;
+  bottom: 100px;
+}
+/* start training */
+.about {
+  padding: 100px 0;
+  margin-top: 150px;
+}
+.about .container {
+  display: grid;
+  grid-template-areas: "about__left about__right";
+  padding-left: 10%;
+}
+.about .about__left {
+  width: 50%;
+  padding-left: 100px;
+  padding-right: 170px;
+}
+.about .about__left img {
+  top: 0px;
+  left: 190px;
+  bottom: 0;
+}
+.about .about__right {
+  width: 700px;
+  padding-top: 15%;
+}
+.about .about__right .about__right__title {
+  color: #0037b7;
+  font-size: 40px;
+  line-height: 57px;
+  font-weight: 600;
+}
+.about .about__right .about__right__description {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+/* end training */
+.training {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  margin-top: 250px;
+  position: relative;
+  justify-content: space-around;
+}
+.training .training__left {
+  text-align: justify;
+  width: 50%;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 230px;
+}
+.training .training__left__title {
+  color: #0037b7;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.training .training__left__list {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  line-height: 1.8;
+  list-style: none;
+}
+.training .training__left__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+.training .training__left__list li p {
+  text-align: justify;
+}
+/* dùng before để thay đổi style li */
+.training .training__left__list li::before {
+  content: "\25A0";
+  color: #8443d8;
+  margin-right: 10px;
+  font-size: 22px;
+}
+.training .training__right {
+  background-image: url("../images/bg-training.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  min-height: 780px;
+  position: relative;
+}
+.training .training__right__icon {
+  margin-top: 250px;
+  margin-right: 200px;
+}
+
+.training .training__right .training__right__icon img {
+  margin-right: 100px;
+}
+.contact {
+  background-image: url("../images/bg-contact.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  position: absolute;
+  top: 10px;
+  padding: 100px 0;
+  margin-top: 361.5px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+.contact::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(132, 67, 216, 0.99),
+    rgba(75, 83, 211, 0.99)
+  );
+  opacity: 0.8; /* Điều chỉnh độ trong suốt */
+  z-index: 1;
+}
+.contact .contact__form {
+  display: flex;
+  position: relative;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+}
+.contact .contact__form .contact__form__icon {
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  left: 49%;
+  top: 10%;
+}
+.contact .contact__form .contact__form__header {
+  font-weight: 600;
+  font-size: 36px;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 150px;
+}
+.contact .contact__form .contact__form__text {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: auto;
+}
+.contact .contact__form .contact__form__text input {
+  width: 380px;
+  padding: 12px;
+  margin: 5px;
+  background-color: transparent;
+  font-size: 16px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+}
+.contact .contact__form .contact__form__text textarea {
+  padding: 10px;
+  width: 100%;
+  height: 221px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background-color: transparent;
+}
+.contact__form__text input::placeholder,
+.contact__form__text textarea::placeholder,
+.contact__form__btn {
+  color: white;
+}
+.contact .contact__form .contact__form__btn {
+  width: auto;
+  height: 60px;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  background-color: transparent;
+  margin: 45px auto 0 auto;
+}
+@media (max-width: 600px) {
+  .contact__form__text input {
+    width: 100%; /* Trên mobile, input sẽ full width */
+  }
+}
+@media (max-width: 600px) {
+  .training {
+    width: 100%; /* Trên mobile, input sẽ full width */
+  }
+}
+.opportunity {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  margin-top: 250px;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+.opportunity .opportunity__header {
+  font-size: 36px;
+  color: #0037b7;
+  font-weight: 600;
+}

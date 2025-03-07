@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trang chủ</title>
+        <!-- start bootstrap responsive-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- end bootstrap responsive-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <!-- Slick slider -->
+        <link rel="stylesheet" href="slick/slick.css">
+        <script src="slick/slick.min.js"></script>
+        <!-- End slick -->
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+    <body>
+        <header class="header">
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
+            <ul class="header__menu">
+                <li><a href="index.html">Giới thiệu</a></li>
+                <li><a href="about.html">Mục tiêu đào tạo</a></li>
+                <li><a href="services.html">Tố chất phù hợp</a></li>
+                <li><a href="contact.html">Cơ hội việc làm</a></li>
+            </ul>
+        </header>
+        <section class="banner">
+            <div class="banner__left">
+                <h1 class="banner__left__name">NGÀNH KỸ THUẬT PHẦN MỀM</h1>
+                <p class="banner__left__descrition">Khoa Công nghệ Thông tin</p>
+                <button class="banner__left__btn-banner">MÃ NGÀNH
+                    7480103</button>
+            </div>
+            <div class="banner__right">
+                <img src="images/icon-banner.png" alt>
+            </div>
+        </section>
+        <!-- gioi thieu nganh CNPM -->
+        <section class="about">
+            <div class="container">
+                <div class="about__left">
+                    <img src="images/icon-about.png" alt>
+                </div>
+                <div class="about__right">
+                    <h2 class="about__right__title">GIỚI THIỆU<br><span> NGÀNH
+                            "KỸ THUẬT PHẦN MỀM"</span></h2>
+                    <p class="about__right__description">Kỹ thuật Phần mềm
+                        (Software Engineering) là một lĩnh vực trong ngành Công
+                        nghệ Thông tin chuyên nghiên cứu và ứng dụng các nguyên
+                        tắc kỹ thuật để phát triển, vận hành và bảo trì phần mềm
+                        một cách hiệu quả, đáng tin cậy và có thể mở rộng. Ngành
+                        này kết hợp giữa lập trình, quản lý dự án, kiểm thử và
+                        bảo trì
+                        phần mềm để tạo ra các hệ thống phần mềm đáp ứng nhu cầu
+                        thực tế.</p>
+                </div>
+            </div>
+        </section>
+        <!-- end about -->
+        <!-- start trainingtraining -->
+        <section class="training">
+            <div class="container">
+                <div class="training__left">
+                    <h2 class="training__left__title">MỤC TIÊU ĐÀO TẠO</h2>
+                    <ul class="training__left__list">
+                        <li><p>Đào tạo cử nhân Kỹ thuật phần mềm có kiến thức
+                                khoa học cơ bản, kiến thức cơ sở và chuyên ngành
+                                về kỹ thuật phần mềm;</p></li>
+                        <li><p>Có khả năng tham gia và đảm nhận các dự án phát
+                                triển phần mềm, có năng lực thực hiện việc tin
+                                học hóa các hệ thống thông tin nhằm đáp ứng cho
+                                nhu cầu của các cơ quan, tổ chức; </p></li>
+                        <li><p>Có kỹ năng giao tiếp, làm việc nhóm và thái độ
+                                nghề nghiệp đáp ứng yêu cầu phát triển của ngành
+                                và xã hội.</p></li>
+                    </ul>
+                </div>
+                <div class="training__right">
+                    <img class="training__right__icon"
+                        src="images/icon-tranining.png" alt>
+                </div>
+            </div>
+        </section>
+        <!-- end training -->
+        <section class="contact">
+            <form class="contact__form">
+                <div class="contact__form__icon">
+                    <i class="fa fa-headset custom-icon"></i>
+                </div>
+                <div class="contact__form__header">ĐĂNG KÝ TƯ VẤN</div>
+                <div class="contact__form__text">
+                    <input type="text" id="name" name="name"
+                        placeholder="Họ và Tên">
+                    <input type="text" id="email" name="email"
+                        placeholder="Email">
+                    <input type="text" id="phone" name="phone"
+                        placeholder="Số điện thoại">
+                    <input list="schools" id="school_name" name="school_name"
+                        placeholder="Tên Trường cấp 3">
+                    <datalist id="schools">
+                        <option value="THPT Long Xuyên"></option>
+                        <option value="THPT Nguyễn Công Trứ"></option>
+                        <option value="THPT Nguyễn Hiền"></option>
+                    </datalist>
+                    <textarea id="text" name="text"
+                        placeholder="Nội dung muốn tư vấn"></textarea>
+                    <button class="contact__form__btn">GỬI YÊU CẦU TƯ
+                        VẤN</button>
+                </div>
+            </form>
+        </section>
+        <secton class="opportunity">
+            <h2 class="opportunity__header">Cơ hội nghề nghiệp</h2>
+            <p class="opporunity__title">Khi học ngành Kỹ thuật phần mềm, sau
+                khi ra trường bạn có thể xin việc trong các ngành nghề sau</p>
+            <div class="opportunity__list__img">
+                <img class="opportunity__list__img__one"
+                    src="images/thumbnail-1.png">
+                <img class="opportunity__list__img__two"
+                    src="images/thumbnail-2.png">
+                <img class="opportunity__list__img__three"
+                    src="images/thumbnail-3.png">
+                <img class="opportunity__list__img__four"
+                    src="images/thumbnail-4.png">
+                <img class="opportunity__list__img__five"
+                    src="images/thumbnail-5.png">
+                <img class="opportunity__list__img__six"
+                    src="images/thumbnail-6.png">
+            </div>
+            <div class="opportunity__list__info">
+                <div class="opportunity__list__info__header">
+                    <h5 class="opportunity__list__info__header_1">Giám đốc kỹ
+                        thuật</h5>
+                    <h5 class="opportunity__list__info__header_2">Quản lí dự án
+                        phần mềm (PM)</h5>
+                    <h5 class="opportunity__list__info__header_3">Lập trình viên
+                        (Coder)</h5>
+                    <h5 class="opportunity__list__info__header_4">Kỹ sư cầu nối
+                        (BrSE)</h5>
+                    <h5 class="opportunity__list__info__header_5">Kiểm thử phần
+                        mềm (Tester) </h5>
+                    <h5 class="opportunity__list__info__header_6">Kỹ sư đảm bảo
+                        chất lượng phần mềm</h5>
+                </div>
+                <div class="opportunity__list__info__title">
+                    <p class="opportunity__list__info__title_1">Lorem ipsum
+                        dolor sit amet, consetetur sadipscing elitr, sed.</p>
+                    <p class="opportunity__list__info__title_2">Lorem ipsum
+                        dolor sit amet, consetetur sadipscing elitr, sed.</p>
+                    <p class="opportunity__list__info__title_3">Lorem ipsum
+                        dolor sit amet, consetetur sadipscing elitr, sed.</p>
+                    <p class="opportunity__list__info__title_4">Lorem ipsum
+                        dolor sit amet, consetetur sadipscing elitr, sed.</p>
+                    <p class="opportunity__list__info__title_5">Lorem ipsum
+                        dolor sit amet, consetetur sadipscing elitr, sed.</p>
+                    <p class="opportunity__list__info__title_6">Lorem ipsum
+                        dolor sit amet, consetetur sadipscing elitr, sed.</p>
+                </div>
+                <div class="opportunity__list__info__footer">
+                    <p>Ngoài ra bạn cũng có thể tiếp tục học sau đại học chuyên
+                        ngành Công nghệ Thông tin tại Trường Đại học An Giang để
+                        tiếp tục nâng cao
+                        kiến thức chuyên môn và mở ra nhiều cơ hội nghề nghiệp
+                        trong tương lai</p>
+                </div>
+            </div>
+        </secton>
+    </body>
+</html>
